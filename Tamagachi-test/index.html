@@ -1,0 +1,83 @@
+<!-- https://repl.it/@RockyKev/Tamagachi-test --> 
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <!-- WORK HERE --> 
+
+    <div id="app">
+      <h1> TAMAGATCHI </h1>
+
+      <div id="bar-upper">
+      <p class="w-50 text-center"> <i class="fa fa-spoon fa-2x"> </i> | TOILET | PLAY</p>
+      </div>
+
+     
+
+      <div class="pt-5 pb-5" id="main">
+      
+      <p class="w-50 text-center"> o </p>
+      
+      </div>
+
+
+      <div id="bar-lower">
+     <p class="w-50 text-center"> DISCIPLINE | WEIGHT | LIGHTS </p>
+      </div>
+
+      <button type="button" class="btn btn-info" v-on:click="tama.weight += 1">Add 1</button>
+
+
+      NOTEBOOK to look at stats?
+
+      <hr />
+      <h1> debug stats </h1> 
+      {{ tama }}
+
+      <div v-for="(value, name) in tama">
+        {{ name }}: {{ value }}
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- END WORK --> 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- production version, optimized for size and speed 
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
